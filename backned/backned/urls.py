@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.saludo),
     path('nosvemos/', views.nosvemos),
-    path('fecha', views.fechaactual)
+    path('fecha', views.fechaactual),
+    path('edad/<int:agno>/<int:edadactual>', views.calcularedad)
 
 ]
